@@ -84,7 +84,6 @@ ul > li{
   }
  
 #heroimage{
-    display: flexbox;
    overflow: hidden;
    height: 100vh;
    min-width: 1500px;
