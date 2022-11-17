@@ -38,7 +38,7 @@ ul {
 
 }
 
-ul > li{
+ul li{
    display: inline;
    padding: 16px;
    float: right;
@@ -50,54 +50,138 @@ ul > li{
 
 /* About Me Dropdown*/
 
+
+
 .About-child {
-    display: none;
-    margin-top: 12%;
-    height: 30px;
-    width: 200px;
-    
-   
- /*   outline: 2px solid red; */
+    height: 125px;
+    width: 170px;
+    position: relative;
+    margin-top: 15px;
 
 } 
 .About-child ul {
-    position: relative;
+    
+    display: none;
+    width: 100%;
     flex-direction: column;
-    background-color: rgba(56, 67, 208, 1);
+   
 }
+
 .About-child ul li{
-    float: inherit;
-    margin: 0%;
-    height: 30px;
-    width: 200px;
-    padding: 5%;
-    text-align: center;
-  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     /*outline: 2px solid red;*/
+    background-color: rgba(56, 67, 208, 1);
   }
+
 .About-child ul li:hover {
-    margin: 0%;
-    height: 30px;
-    width: 200px;
-    padding: 5%;
-    text-align: center;
     background-color: rgb(235, 162, 3);
   }
  
-#heroimage{
-   overflow: hidden;
-   height: 100vh;
-   min-width: 1500px;
+
+.banner-info {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 55%;
+    position: absolute;
+    margin: 20px;
+    outline: 3px solid rgba(67, 1, 109, 1);
+    margin-left: 50px;
+    border-radius: 30px;
+    
 }
 
-h1{
+#heroimage {
+    
+    background-image: url("../Images/hero-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    margin-left: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+   min-width: 1400px;
+   overflow: hidden;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.myNames {
+    
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(91.09deg, #17016E -1.35%, #A6186D 100.92%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+  -webkit-text-fill-color:  transparent;
+
+}
+
+.banner-info {
+
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-weight: 200;
+
 }
+
+.banner-info h3 {
+    color: #3843D0;
+}
+
+.banner-info p {
+    color: #3843D0;
+}
+
+.bannerButton {
+    margin-top: 5%;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bannerButton button {
+
+    height: 75px;
+    width: 250px;
+    border-radius: 15px;
+    border-color: rgba(67, 1, 109, 1);
+    font-size: large;
+    
+}
+
+.project {
+    background: linear-gradient(88.74deg, #17016E 33.72%, #A6186D 111.53%);;
+    color: #EBEBEB;
+    
+}
+
+.project:hover {
+    background: floralwhite;
+    color: #000 ;
+    
+}
+
+.skills:hover {
+    background: linear-gradient(88.74deg, #17016E 33.72%, #A6186D 111.53%);;
+    color: #EBEBEB;
+}
+
 .section1{
     display: block;
     max-width: 100% ;
@@ -108,7 +192,7 @@ h1{
     justify-content: center;
     align-items: center;
     padding-left: 10%;
-    margin-bottom:10% ;
+    margin-bottom:4% ;
 }
 
 div.gallery {
@@ -182,10 +266,16 @@ footer{
       
 
     #heroimage{
-        display: flex;
-        max-width: 80%;
-        height: auto;
-        justify-content: center;
+        background-image: url("../Images/hero-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80vh;
+   min-width: 1400px;
+   overflow: hidden;
     }
 
     .box{

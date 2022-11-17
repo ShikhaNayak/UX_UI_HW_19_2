@@ -1,3 +1,9 @@
-$("#about-me").click( function(){
-    $(".About-child").slideToggle();
-  });
+
+
+$("#about-me").hover( function(){
+   $(".About-child ul").slideToggle();
+});
+
+
+
+console.log();
